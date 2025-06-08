@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador de Madera Web</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <h1>Diseñador de Madera Web</h1>
+
+        <div class="controls">
+            <button id="selectShapeBtn">Seleccionar Forma</button>
+            <input type="color" id="colorPicker" value="#000000">
+            <label for="colorPicker">Seleccionar Color</label>
+
+            <label for="penSizeSlider">Tamaño Pincel:</label>
+            <input type="range" id="penSizeSlider" min="1" max="10" value="2">
+            <span id="penSizeValue">2</span>
+
+            <button id="clearCanvasBtn">Limpiar Canvas</button>
+            <button id="saveDesignBtn">Guardar Diseño</button>
+            <button id="sendEmailBtn">Enviar por Correo</button>
+        </div>
+
+        <p id="message">Haz clic en 'Seleccionar Forma' para empezar a diseñar.</p>
+
+        <canvas id="drawingCanvas"></canvas>
+    </div>
+
+    <script src="jsmadera.js"></script> 
+</body>
+</html>
